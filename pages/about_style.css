@@ -1,0 +1,69 @@
+.intro-name{
+    text-align: center;
+    padding: 10px 0;
+    background-color: rgb(75, 228, 255, 0.708);
+}
+@media(max-width: 400px){
+    .intro-name{
+        font-size: 12px;
+    }
+}
+.intro-profileimage-contaier{
+    display: flex;
+    padding: 20px;
+    padding-bottom: 40px;
+    justify-content: center;
+    background: linear-gradient(to bottom, rgba(75, 228, 255, 0.708), rgba(249, 255, 249, 0.45));
+}
+.intro-profileimage-contaier img{
+    width: 350px;
+    margin-right: 20px;
+    /* border-bottom: 3px solid #060606; */
+    border-bottom: 10px solid #000000; /* Add a transparent border for better gradient effect */
+    border-image: linear-gradient(to bottom, rgb(116, 116, 116), rgba(255, 255, 255, 0.183)) 174;
+}
+table {
+  border-collapse: collapse; /* Remove spacing between table cells */
+  margin: 20px 0;
+}
+
+th, td {
+  border: 1.5px solid rgb(84, 84, 84); /* Add borders to cells */
+  padding: 13px; /* Add padding inside cells */
+  text-align: center; /* Center text within cells */
+}
+@media(max-width: 720px) {
+    .intro-profileimage-contaier{
+        display: block;
+        align-items: center;
+    }
+}
+@media(max-width: 410px){
+    .intro-profileimage-contaier img{
+        width: 300px;
+    }
+    th, td {
+        border: 1px solid rgb(188, 188, 188); /* Add borders to cells */
+        padding: 13px; /* Add padding inside cells */
+        text-align: center; /* Center text within cells */
+        font-size: 12px;
+    }
+}
+
+.about-matter{
+    margin: 20px;
+    padding-bottom: 40px;
+    /* font-size: 18px; */
+    text-align: justify;
+}
+.about-matter p{
+    font-weight: 600;
+    color: rgb(63, 63, 63);
+    line-height: 1.8;
+}
+@media(max-width: 450px){
+    .about-matter p{
+        font-weight: 400;
+        font-size: 15px;
+    }
+}

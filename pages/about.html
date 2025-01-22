@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nooka Reddy</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="about_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="/images/fav.png" type="image/x-icon">
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="greenline">
+        <div class="social-elements">
+            <a href="https://www.facebook.com/nookareddy.kolli/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/nookareddy.kolli/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/nookareddy.kolli/" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+        </div>
+    </div>
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><i class="fa fa-close"style="font-size:32px"></i></a></li>
+            <li><a href="/pages/about.html"><span>About</span></a></li>
+            <li><a href="/pages/activities.html">Activities</a></li>
+            <li><a href="/pages/media.html">In Media</a></li>
+            <li><a href="/pages/contact.html">Contact</a></li>
+            <li><a href="https://forms.zohopublic.in/technodyne/form/ClientDetails/formperma/TmO_hCWbUbOjMjP3bXzKX3YH2_axnv7WTAm5vAVU2s4" target="_blank">Register</a></li>
+        </ul>
+        <ul>
+            <li><a href="/index.html"><img src="/images/logo.png" alt=""></a></li>
+            <span><li class="hide-mobile"><a href="/pages/about.html">About</a></li></span>
+            <li class="hide-mobile"><a href="/pages/activities.html">Activities</a></li>
+            <li class="hide-mobile"><a href="/pages/media.html">In Media</a></li>
+            <li class="hide-mobile"><a href="/pages/contact.html">Contact</a></li>
+            <li class="hide-mobile"><a href="https://forms.zohopublic.in/technodyne/form/ClientDetails/formperma/TmO_hCWbUbOjMjP3bXzKX3YH2_axnv7WTAm5vAVU2s4" target="_blank">Register</a></li>
+            <li class="hide-pc" onclick=showSidebar()><a href="#"><i class="fa fa-bars"style="font-size:30px"></i></a></li>
+        </ul>
+    </nav>
+
+    <!-- Body -->
+    <div class="intro-name">
+    <h1>About Nooka Reddy Kolli</h1>
+    </div>
+
+    <div class="intro-profileimage-contaier">
+        <img src="/images/profile4.png" alt="">
+        <div class="profile-info">
+            <table>
+                <tr>
+                    <th>Name:</th>
+                    <td>Nooka Reddy Kolli</td>
+                </tr>
+                <tr>
+                    <th>Education Qualification:</th>
+                    <td>MCA, M.Phil</td>
+                </tr>
+                <tr>
+                    <th>Age:</th>
+                    <td>37 Years</td>
+                </tr>
+                <tr>
+                    <th>Address:</th>
+                    <td>Gajuwaka, Visakhapatnam</td>
+                </tr>
+                <tr>
+                    <th>Residence:</th>
+                    <td>Andhra Pradesh, India</td>
+                </tr>
+                <tr>
+                    <th>Email:</th>
+                    <td>knreddy.aditya@gmail.com</td>
+                </tr>
+                <tr>
+                    <th>Phone:</th>
+                    <td>+91 8019219266</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="about-matter">
+        <p>
+            Sri Kolli Nooka Reddy Garu has been a transformative figure and a tireless benefactor for the people of Visakhapatnam and its surrounding areas, including Malkapuram, Old Gajuwaka, New Gajuwaka, Gantyada, Sheelanagar, Akkireddipalem, Akkayapalem, and beyond, for over two decades.  
+        <br>
+            Recognized as "The Donor of Education," Sri Nooka Reddy Garu established Sri Adithya Junior and Degree Colleges in 2000, which provided free education to students from economically weaker sections. His initiative illuminated countless lives and brought hope to families by offering opportunities for growth and learning.  
+
+            Moved by the loss of lives due to inadequate blood supply, Sri Nooka Reddy Garu took it upon himself to establish numerous blood banks, significantly enhancing the availability of life-saving resources in the region. His altruism extended further to empowering the underprivileged by creating economic opportunities through employment and work contracts.  
+        <br>
+            In the political arena, Sri Nooka Reddy Garu has been a dynamic and persistent advocate for the development of Gajuwaka. His unwavering commitment to improving the community's infrastructure, social welfare, and overall quality of life has cemented his reputation as a compassionate and effective leader dedicated to progress.
+        </p>
+    </div>
+    
+
+
+    <!-- Footer -->
+     <div class="footer-menu">
+        <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="activities.html">Activities</a></li>
+            <li><a href="media.html">In Media</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+     </div>
+
+
+     <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 100vh;
+    /* background-image: url(/images/bg1.png); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.greenline{
+    padding: 20px 0;
+    background-color: #039b1f;
+}
+.social-elements{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+.social-elements a{
+    text-decoration: none;
+    color: aliceblue;
+    margin: 0 10px;
+    padding: 0 3px;
+}
+.social-elements a:hover{
+    color: #055c15;
+    border-radius: 3px;
+    background-color: aliceblue;
+    transition: .5s ease;
+}
+nav{
+    width: 100%;
+    position: relative;
+    background-color: rgb(215, 238, 255);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li{
+    height: 80px;
+}
+nav a{
+    height: 100%;
+    padding: 0 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+    transition: .3s ease;
+}
+nav a img{
+    width: 150px;
+}
+nav a:hover{
+    background-color: rgb(130, 198, 249);
+}
+nav li:first-child{
+    margin-right: auto;
+}
+nav span{
+    background-color: rgb(130, 198, 249);
+}
+.hide-pc{
+    display: none;
+    margin-right: 20px;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(48, 146, 231, 0.123);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+@media(max-width: 933px){
+    .hide-mobile{
+        display: none;
+    }
+    .sidebar a{
+        font-weight: 600;
+    }
+    .hide-pc{
+        display: block;
+    }
+}
+
+.footer-menu {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    width: 100%;
+    background-color: rgb(226, 226, 226);
+}
+.footer-menu ul{
+    display: flex;
+    list-style: none;
+    margin: 13px 0;
+}
+.footer-menu ul li{
+    margin: 0 10px;
+}
+.footer-menu a{
+    text-decoration: none;
+    color: rgb(89, 89, 89);
+}
+
+.footer-menu a:hover{
+    color: rgb(0, 0, 0);
+}

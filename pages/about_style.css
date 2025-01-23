@@ -3,6 +3,23 @@
     padding: 10px 0;
     background-color: rgb(75, 228, 255, 0.708);
 }
+.intro-name h1{
+    animation-name: intro;
+    animation-duration: 2s;
+}
+@keyframes intro {
+    0% {
+        transform: translateY(120px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+.intro-name hr{
+    margin: 5px 30px;
+    border: 1px solid #22222228;
+}
 @media(max-width: 400px){
     .intro-name{
         font-size: 12px;
@@ -16,6 +33,7 @@
     background: linear-gradient(to bottom, rgba(75, 228, 255, 0.708), rgba(249, 255, 249, 0.45));
 }
 .intro-profileimage-contaier img{
+    animation: intro 2.6s;
     width: 350px;
     margin-right: 20px;
     /* border-bottom: 3px solid #060606; */
@@ -23,8 +41,9 @@
     border-image: linear-gradient(to bottom, rgb(116, 116, 116), rgba(255, 255, 255, 0.183)) 174;
 }
 table {
-  border-collapse: collapse; /* Remove spacing between table cells */
-  margin: 20px 0;
+    animation: intro 3s;
+    border-collapse: collapse; /* Remove spacing between table cells */
+    margin: 20px 0;
 }
 
 th, td {
@@ -70,13 +89,13 @@ th, td {
 .slokam{
     margin: 20px 0;
     align-items: center;
-    text-align: center;
 }
 .slokam p{
-    /* text-align: center; */
     font-size: 20px;
     line-height: 2.5;
     color: rgb(47, 48, 58);
+    text-align: center;
+    padding-left: 20px;
 }
 
 @media(max-width: 500px){

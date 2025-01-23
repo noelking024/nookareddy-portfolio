@@ -6,14 +6,22 @@ body{
     display: flex;
     margin: 10px;
 }
+@keyframes one{
+    0% {
+        transform: translateY(200px);
+        opacity: 0;
+    }
+}
 .main-page-image img{
     width: 500px;
+    animation: one 1.3s;
 }
 .first-image{
     position: absolute;
     bottom: 0;
 }
 .text-for-intro{
+    animation: one 2s;
     position: absolute;
     right: 20px;
     top: 40%;

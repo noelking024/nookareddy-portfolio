@@ -130,3 +130,8 @@ nav span{
 .footer-menu a:hover{
     color: rgb(0, 0, 0);
 }
+@media(max-width:380px){
+    .footer-menu a{
+        font-size: 13px;
+    }
+}

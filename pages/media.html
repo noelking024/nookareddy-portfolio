@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nooka Reddy</title>
     <link rel="stylesheet" href="/pop-style.css">
+    <link rel="stylesheet" href="media_style.css">
     <link rel="stylesheet" href="magnific-popup.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.2.0/magnific-popup.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.2.0/jquery.magnific-popup.min.js"></script>
-    <link rel="stylesheet" href="/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.2.0/jquery.magnific-popup.min.js"></script>    <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -49,7 +49,22 @@
 
     <!-- -----------Body--------- -->
 
+    <!-- <a class="simple-ajax-popup-align-top" href="/profiles/pr1.html"><img src="/images/profile1.png" alt=""></a><br> -->
+    <div class="political-profils-list">
+        <div class="candidate">
+            <a class="simple-ajax-popup" href="/profiles/pr1.html"><img src="/images/profile1.png" alt=""></a>
+            <h2>Kolli Nooka Reddy</h2>
+        </div>
+        <div class="candidate">
+            <a class="simple-ajax-popup" href="/profiles/pr2.html"><img src="/images/modi.png" alt=""></a>
+            <h2>Shri Narendra Modi</h2>
+        </div>
+        <div class="candidate">
+            <a class="simple-ajax-popup" href="/profiles/pr3.html"><img src="/images/amit.png" alt=""></a>
+            <h2>Amit Shah</h2>
+        </div>
 
+        </div>
 
     <!-- Footer -->
      <div class="footer-menu">
@@ -109,6 +124,21 @@
                     duration: 300 // don't foget to change the duration also in CSS
                 }
             });
+
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+
+        $('.simple-ajax-popup-align-top').magnificPopup({
+            type: 'ajax',
+            alignTop: true,
+            overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
+        });
+
+        $('.simple-ajax-popup').magnificPopup({
+            type: 'ajax'
+        });
 
         });
     </script>

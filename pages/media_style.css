@@ -1,11 +1,14 @@
-body img{
+.candidate img{
     width: 200px;
+    margin: 0 auto !important;
     margin: 20px;
+    display: block;
 }
 .political-profils-list{
     /* display: flex; */
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 .candidate{
     margin: 10px;
@@ -18,4 +21,28 @@ body img{
 }
 .candidate h2{
     text-align: center;
+}
+@media (max-width:616px){
+    .political-profils-list{
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+@media (max-width:560px){
+    .candidate img{
+        width: 150px;
+    }
+    .candidate h2{
+        font-size: 18px;
+    }
+}
+@media (max-width:400px){
+    .political-profils-list{
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+    .candidate img{
+        width: 100px;
+    }
+    .candidate h2{
+        font-size: 16px;
+    }
 }

@@ -7,11 +7,12 @@
 @keyframes act{
     0%{
         transform: translateY(100px);
+        opacity: 0;
     }
 }
 
 .act-images-container {
-    animation: act 3s;
+    animation: act 2s;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust minmax values as needed */
     grid-gap: 20px;

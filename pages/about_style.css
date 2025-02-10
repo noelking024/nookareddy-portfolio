@@ -216,12 +216,34 @@ hr{
     } */
     .about-matter img{
         width: 450px;
-        height: 400px;
+        height: 500px;
     }
 }
+
 @media(max-width:1030px){
+    .about-matter{
+        display: block;
+        text-align: center;
+        /* align-items: center; */
+    }
     .about-matter img{
-        width: 500px;
-        height: 500px;
+        width: 450px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .about-matter p{
+        text-align: justify;
+    }
+}
+@media(max-width:530px){
+    .about-matter img{
+        width: 400px;
+        height: auto;
+    }
+}
+@media(max-width:462px){
+    .about-matter img{
+        width: 300px;
+        height: auto;
     }
 }

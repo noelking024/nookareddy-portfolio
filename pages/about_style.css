@@ -1,7 +1,8 @@
 .intro-name{
     text-align: center;
     padding: 10px 0;
-    background-color: rgb(75, 228, 255, 0.708);
+    border: 2px solid rgb(75, 228, 255);
+    background-color: rgb(75, 228, 255);
 }
 .intro-name h1{
     animation-name: intro;
@@ -30,7 +31,7 @@
     padding: 20px;
     padding-bottom: 40px;
     justify-content: center;
-    background: linear-gradient(to bottom, rgba(75, 228, 255, 0.708), rgba(249, 255, 249, 0.45));
+    background: linear-gradient(to bottom, rgb(75, 228, 255), rgb(251, 254, 255));
 }
 .intro-profileimage-contaier img{
     animation: intro 2.6s;
@@ -70,10 +71,19 @@ th, td {
 }
 
 .about-matter{
-    margin: 20px;
+    display: flex;
+    background-color: #ffffff;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 20px;
     padding-bottom: 40px;
     /* font-size: 18px; */
     text-align: justify;
+    justify-content: space-between;
+}
+.about-matter img{
+    width: 30%;
+    /* height: auto; */
+    margin-right: 20px;
 }
 .about-matter p{
     font-weight: 600;
@@ -87,15 +97,23 @@ th, td {
     }
 }
 .slokam{
-    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
     align-items: center;
+    z-index: 1; /* Ensure content is above the background */
+    padding: 20px;
 }
 .slokam p{
+    border: 2px solid #ffffff;
+    color: #ffffff;
     font-size: 20px;
     line-height: 2.5;
-    color: rgb(47, 48, 58);
-    text-align: center;
-    padding-left: 20px;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 5px;
 }
 
 @media(max-width: 500px){
@@ -113,5 +131,91 @@ th, td {
 
 hr{
     border: 1px solid rgb(150, 150, 150);
-    margin: 20px 0;
+    /* padding: 10px 0; */
+    padding: 0 20px;
+    background-color: rgb(251, 254, 255);
+}
+
+.backimg {
+    position: fixed; /* Fix the background in place */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/images/fb_images/image3.png'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    z-index: -1; /* Place it behind the content */
+}
+
+/* Add a light blue overlay */
+.backimg::before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(36, 60, 168, 0.614); /* Light blue with 50% opacity */
+}
+
+.about-matter2{
+    /* display: flex; */
+    background-color: #ffffff;
+    padding: 20px;
+    padding-bottom: 70px;
+    /* font-size: 18px; */
+    text-align: justify;
+    justify-content: space-between;
+}
+.about-matter2 img{
+    width: 30%;
+    /* height: auto; */
+}
+.about-matter2 p{
+    font-weight: 600;
+    color: rgb(63, 63, 63);
+    line-height: 1.8;
+}
+@media(max-width: 450px){
+    .about-matter2 p{
+        font-weight: 400;
+        font-size: 15px;
+    }
+}
+
+.next-matter{
+    /* display: flex; */
+    background-color: #ffffff;
+    padding: 20px;
+    padding-bottom: 70px;
+    /* font-size: 18px; */
+    text-align: justify;
+    justify-content: space-between;
+}
+.next-matter img{
+    width: 30%;
+    /* height: auto; */
+}
+.next-matter p{
+    font-weight: 600;
+    color: rgb(63, 63, 63);
+    line-height: 1.8;
+}
+@media(max-width: 450px){
+    .next-matter p{
+        font-weight: 400;
+        font-size: 15px;
+    }
+}
+
+@media(max-width:1130px){
+    /* .about-matter{
+        display: grid;
+        grid-template-columns: 1fr, 2fr;
+    } */
+    .about-matter img{
+        width: 450px;
+        height: 400px;
+    }
 }

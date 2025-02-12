@@ -149,17 +149,44 @@
 		</div>
 	</section>
 
+    <div class="curve">
+    </div>
+
 
     <!-- Footer -->
-     <div class="footer-menu">
-        <ul>
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="activities.html">Activities</a></li>
-            <li><a href="media.html">PRs</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-     </div>
+    <div class="footer-curl">
+        <!-- <p> </p> -->
+    </div>
+
+    <div class="footer-info">
+        <div class="foot-data">
+            <h2>Kolli Nooka Reddy</h2>
+            <h3>+91 8019219266, knreddy.aditya@gmail.com Visakhapatnam,<br>Andhra Pradesh</h3>
+        </div>
+        <div class="foot-data">
+            <h2>About</h2>
+            <ul>
+                <li><a href="/index.html"><i class="fa fa-arrow-right" aria-hidden="true"></i> Home</a></li>
+                <li><a href="/pages/about.html"><i class="fa fa-arrow-right" aria-hidden="true"></i> About</a></li>
+                <li><a href="/pages/contact.html"><i class="fa fa-arrow-right" aria-hidden="true"></i> Contact</a></li>
+            </ul>
+        </div>
+        <div class="foot-data">
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="/pages/activities.html"><i class="fa fa-arrow-right" aria-hidden="true"></i> Activities</a></li>
+                <li><a href="/pages/media.html"><i class="fa fa-arrow-right" aria-hidden="true"></i> PRs</a></li>
+            </ul>
+        </div>
+        <div class="foot-data">
+            <h2>Social Links</h2>
+            <ul class="social-icons">
+                <li><a href="https://www.facebook.com/nookareddy.kolli/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.facebook.com/nookareddy.kolli/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.facebook.com/nookareddy.kolli/" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+    </div>
 
 
      <script>
@@ -183,6 +210,19 @@
             .then(response => alert("Thanks for your response!"))
             .catch(error => console.error('Error!', error.message))
         })
+    </script>
+
+    <script>
+        const header = document.querySelector('nav');
+        const scrollThreshold = 125; // Scroll distance before fixing header
+
+        window.addEventListener('scroll', () => {
+        if (window.pageYOffset >= scrollThreshold) {
+            header.classList.add('fixed');
+        } else {
+            header.classList.remove('fixed');
+        }
+        });
     </script>
 
 </body>

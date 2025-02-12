@@ -74,3 +74,11 @@
         opacity: 0;
     }
 }
+.curve{
+    background-image: url('/images/dbclr1.png');
+    /* background-image: url('/images/cur1.png'); */
+    background-size: 80%;
+    opacity: 0.2;
+    background-repeat: no-repeat;
+    padding: 10% 0;
+}

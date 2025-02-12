@@ -85,8 +85,15 @@
         </div>
     </div>
 
+    <div class="contact-button">
+        <div class="con-link">
+            <a class="bu" href="contact.html">Contact<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+        </div>
+    </div>
+
     <div class="about-matter">
-        <img src="/images/fb_images/image11.png" alt="">
+        <div class="blank-space"></div>
+        <img class="first-img" src="/images/fb_images/image11.png" alt="">
         <div class="ab-text">
             <p>
                 Sri Kolli Nooka Reddy Garu has been a transformative figure and a tireless benefactor for the people of Visakhapatnam and its surrounding areas, including Malkapuram, Old Gajuwaka, New Gajuwaka, Gantyada, Sheelanagar, Akkireddipalem, Akkayapalem, and beyond, for over two decades.  
@@ -125,10 +132,44 @@
         </p>
     </div>
     
-
-
     <!-- Footer -->
-     <div class="footer-menu">
+    <div class="footer-curl">
+        <!-- <p> </p> -->
+    </div>
+
+    <div class="footer-info">
+        <div class="foot-data">
+            <h2>Kolli Nooka Reddy</h2>
+            <h3>+91 8019219266, knreddy.aditya@gmail.com Visakhapatnam,<br>Andhra Pradesh</h3>
+        </div>
+        <div class="foot-data">
+            <h2>About</h2>
+            <ul>
+                <li><a href="/index.html"><i class="fa fa-arrow-right" aria-hidden="true"></i> Home</a></li>
+                <li><a href="/pages/about.html"><i class="fa fa-arrow-right" aria-hidden="true"></i> About</a></li>
+                <li><a href="/pages/contact.html"><i class="fa fa-arrow-right" aria-hidden="true"></i> Contact</a></li>
+            </ul>
+        </div>
+        <div class="foot-data">
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="/pages/activities.html"><i class="fa fa-arrow-right" aria-hidden="true"></i> Activities</a></li>
+                <li><a href="/pages/media.html"><i class="fa fa-arrow-right" aria-hidden="true"></i> PRs</a></li>
+            </ul>
+        </div>
+        <div class="foot-data">
+            <h2>Social Links</h2>
+            <ul class="social-icons">
+                <li><a href="https://www.facebook.com/nookareddy.kolli/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.facebook.com/nookareddy.kolli/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.facebook.com/nookareddy.kolli/" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+
+
+     <!-- <div class="footer-menu">
         <ul>
             <li><a href="/index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
@@ -136,7 +177,7 @@
             <li><a href="media.html">PRs</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
-     </div>
+     </div> -->
 
 
      <script>
@@ -149,5 +190,114 @@
             sidebar.style.display = 'none'
         }
     </script>
+
+    <script>
+        const container = document.querySelector('.con-link');
+
+        const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+            container.classList.add('animate');
+            // Optional: Disconnect the observer after the animation has played once
+            // observer.disconnect();
+            } else {
+            // Optional: Reverse the animation when the container is out of view
+            // container.classList.remove('animate');
+            }
+        });
+        });
+
+        observer.observe(container);
+    </script>
+
+    <script>
+        const container1 = document.querySelector('.first-img');
+
+        const observer1 = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+            container1.classList.add('animate');
+            // Optional: Disconnect the observer after the animation has played once
+            // observer1.disconnect();
+            } else {
+            // Optional: Reverse the animation when the container is out of view
+            // container1.classList.remove('animate');
+            }
+        });
+        });
+
+        observer1.observe(container1);
+    </script>
+
+    <script>
+        const container11 = document.querySelector('.ab-text');
+
+        const observer11 = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+            container11.classList.add('animate');
+            // Optional: Disconnect the observer after the animation has played once
+            // observer1.disconnect();
+            } else {
+            // Optional: Reverse the animation when the container is out of view
+            // container11.classList.remove('animate');
+            }
+        });
+        });
+
+        observer11.observe(container11);
+    </script>
+
+    <script>
+        const container12 = document.querySelector('.next-matter');
+
+        const observer12 = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+            container12.classList.add('animate');
+            // Optional: Disconnect the observer after the animation has played once
+            // observer1.disconnect();
+            } else {
+            // Optional: Reverse the animation when the container is out of view
+            // container12.classList.remove('animate');
+            }
+        });
+        });
+
+        observer12.observe(container12);
+    </script>
+
+    <script>
+        const container112 = document.querySelector('.slokam');
+
+        const observer112 = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+            container112.classList.add('animate');
+            // Optional: Disconnect the observer after the animation has played once
+            // observer1.disconnect();
+            } else {
+            // Optional: Reverse the animation when the container is out of view
+            // container112.classList.remove('animate');
+            }
+        });
+        });
+
+        observer112.observe(container112);
+    </script>
+
+    <script>
+        const header = document.querySelector('nav');
+        const scrollThreshold = 125; // Scroll distance before fixing header
+
+        window.addEventListener('scroll', () => {
+        if (window.pageYOffset >= scrollThreshold) {
+            header.classList.add('fixed');
+        } else {
+            header.classList.remove('fixed');
+        }
+        });
+    </script>
+
 </body>
 </html>

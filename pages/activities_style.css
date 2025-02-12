@@ -1,6 +1,6 @@
 .activities-intro{
     text-align: center;
-    margin: 15px 0;
+    margin: 7% 0;
     color: rgb(48, 48, 48);
     animation: act 1s;
 }
@@ -28,11 +28,41 @@
 }
 .act-images-container img{
     width: 100%;
+    height: auto;
+    /* padding: 20px; */
+    border-radius: 10px;
     transition: transform 0.3s ease;
+}
+.image-popup-no-margins{
+    border: 3px solid #011161;
+    border-radius: 10px;
+    padding: 5px;
+    overflow: hidden;
+    display: flex; /* Centers the image */
+    justify-content: center; /* Horizontally center */
+    align-items: center
 }
 .act-images-container img:hover {
     transform: scale(1.1); /* Slightly enlarge the image on hover */
 }
+.image-popup-no-margins:hover{
+    border: 3px solid #029136;
+    transition: .2s ease;
+}
 body{
-    background: linear-gradient(to right, rgb(118, 214, 255), rgb(255, 255, 255), rgba(141, 211, 255, 0.646), rgb(255, 255, 255), rgb(118, 202, 255), rgb(255, 255, 255));
+    background-image: url('/images/blue_down.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: 0 -100px; */
+    /* background-position-y: 20%; */
+    /* background: linear-gradient(to right, rgb(118, 214, 255), rgb(255, 255, 255)); */
+}
+.new-curve{
+    background-image: url('/images/dbclr1.png');
+    padding: 10% 0;
+    margin-bottom: 5%;
+    background-size: cover;
+    opacity: 0.3;
+    background-position: -150px 0;
+    background-repeat: no-repeat;
 }

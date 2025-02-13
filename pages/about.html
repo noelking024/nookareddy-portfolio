@@ -95,16 +95,31 @@
         <div class="blank-space"></div>
         <img class="first-img" src="/images/fb_images/image11.png" alt="">
         <div class="ab-text">
-            <p>
-                Sri Kolli Nooka Reddy Garu has been a transformative figure and a tireless benefactor for the people of Visakhapatnam and its surrounding areas, including Malkapuram, Old Gajuwaka, New Gajuwaka, Gantyada, Sheelanagar, Akkireddipalem, Akkayapalem, and beyond, for over two decades.  
-            <br>
-                Recognized as "The Donor of Education," Sri Nooka Reddy Garu established Sri Adithya Junior and Degree Colleges in 2000, which provided free education to students from economically weaker sections. His initiative illuminated countless lives and brought hope to families by offering opportunities for growth and learning.  
-
-                Moved by the loss of lives due to inadequate blood supply, Sri Nooka Reddy Garu took it upon himself to establish numerous blood banks, significantly enhancing the availability of life-saving resources in the region. His altruism extended further to empowering the underprivileged by creating economic opportunities through employment and work contracts.  
-            <br>
-                In the political arena, Sri Nooka Reddy Garu has been a dynamic and persistent advocate for the development of Gajuwaka. His unwavering commitment to improving the community's infrastructure, social welfare, and overall quality of life has cemented his reputation as a compassionate and effective leader dedicated to progress.
-            </p>
+            <h2 class="dream-line">Years of fullfilling Dreams</h2>
+            <div>
+                <div class="counter">
+                    <h1><span class="number" >0</span></h1>
+                    <h3>In Education Development</h3>
+                </div>
+                <div class="counter">
+                    <h1><span class="number" >0</span></h1>
+                    <h3>For the People</h3>
+                </div>
+                <div class="counter">
+                    <h1><span class="number" >0</span></h1>
+                    <h3>In Social Activities</h3>
+                </div>
+                <div class="counter">
+                    <h1><span class="number" >0</span></h1>
+                    <h3>Proposals <br>Recieved</h3>
+                </div>
+                <div class="counter">
+                    <h1><span class="number" >0</span></h1>
+                    <h3>Proposals <br> Fullfilled (So Far)</h3>
+                </div>
+            </div>
         </div>
+
     </div>
     <hr>
 
@@ -249,7 +264,7 @@
     </script>
 
     <script>
-        const container12 = document.querySelector('.next-matter');
+        const container12 = document.querySelector('.next-matter p');
 
         const observer12 = new IntersectionObserver(entries => {
         entries.forEach(entry => {
@@ -297,6 +312,41 @@
             header.classList.remove('fixed');
         }
         });
+    </script>
+
+    <script>
+        function animateValue(obj, start, end, duration) {
+        let startTimestamp = null;
+        const numElem = obj.querySelector('.number');
+
+        const step = (timestamp) => {
+            if (!startTimestamp) startTimestamp = timestamp;
+            const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+            const currentValue = Math.floor(progress * (end - start) + start);
+            numElem.textContent = currentValue;
+            if (progress < 1) {
+            window.requestAnimationFrame(step);
+            }
+        };
+        window.requestAnimationFrame(step);
+        }
+        const container24 = document.querySelector('.ab-text');
+
+        const observer24 = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const obj = document.querySelectorAll(".counter");
+                    animateValue(obj[0], 0, 225, 2000);
+                    animateValue(obj[1], 0, 125, 2000);
+                    animateValue(obj[2], 0, 125, 2000);
+                    animateValue(obj[3], 0, 125, 2000);
+                    animateValue(obj[4], 0, 125, 2000);
+
+                    observer24.unobserve(container24);
+                }
+            });
+    });
+    observer24.observe(container24);
     </script>
 
 </body>

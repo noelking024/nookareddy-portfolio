@@ -1,0 +1,128 @@
+.ed-intro-line{
+    padding: 10% 5%;
+    background-color: #001758;
+}
+.ed-intro-line h1{
+    color: #e5e5e5;
+    font-weight: 500;
+    font-size: 42px;
+    border-bottom: 4px solid #2854cd;
+    width: fit-content;
+    padding-bottom: 7px;
+}
+.back-button-top{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 3% 5%;
+}
+.back-button-top a{
+    text-decoration: none;
+    color: #0a294d;
+}
+@media(max-width:720px){
+    .ed-intro-line h1{
+        font-weight: 500;
+        font-size: 30px;
+    }
+}
+
+.circle-elements-container h3{
+    font-size: 26px;
+    font-weight: 400;
+    color: #515151;
+    margin: 5% 5%;
+    padding-bottom: 20px;
+}
+.circle-elements-container {
+    margin-bottom: 100px;
+}
+.circle-elements-container ul{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 17%;
+    list-style: none;
+}
+.circle-elements-container li img{
+    width: 100px;
+}
+.circle-elements-container li{
+    padding: 20px 25px;
+    border: 5px solid #284493;
+    border-radius: 10px;
+}
+.circle-elements-container h4{
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+}
+@media(max-width:836px){
+    .circle-elements-container h4{
+        font-size: 16px;
+    }
+    .circle-elements-container li img{
+        width: 70px;
+    }
+    .circle-elements-container ul{
+        margin: 20px 10%;
+    }
+}
+@media(max-width:630px){
+    .circle-elements-container ul{
+        margin: 20px 6%;
+    }
+    .circle-elements-container li img{
+        width: 50px;
+    }
+}
+
+@media(max-width:500px){
+    .circle-elements-container ul{
+        display: block;
+        margin: 20px 17%;
+    }
+    .circle-elements-container li img{
+        width: 110px;
+    }
+    .circle-elements-container li{
+        margin: 20px 0;
+        text-align: center;
+    }
+    .circle-elements-container h3{
+        font-size: 20px;
+    }
+}
+
+.know-more-button{
+    margin: 5% 5%;
+    text-align: center;
+    margin-bottom: 10%;
+}
+.know-more-button a{
+    text-decoration: none;
+    color: #0a294d;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 20px;
+    border: 2px solid #0a294d;
+    border-radius: 10px;
+    transition: .2s ease;
+}
+.know-more-button a:hover{
+    background-color: #001758;
+    border: 2px solid #001758;
+    color: #ffffff;
+}
+
+.ed-curl1 p{
+    background-image: url('/images/curl-ed.png');
+    padding: 100px 0;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    opacity: 0.2;
+}
+.education-matter p{
+    margin: 5%;
+    line-height: 40px;
+    word-spacing: 7px;
+    font-size: 20px;
+}

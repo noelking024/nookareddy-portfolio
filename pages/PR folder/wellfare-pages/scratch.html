@@ -1,0 +1,50 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Single Line Text Wrap</title>
+        <style>
+            .container {
+                display: flex;
+                width: 500px; /* Adjust as needed */
+                border: 1px solid #ccc;
+                padding: 10px;
+            }
+            
+    .image-wrapper {
+      flex-shrink: 0;
+      margin-right: 10px;
+    }
+    
+    .image-wrapper img {
+        width: 150px; /* Fixed image width */
+        height: 200px; /* Fixed image height */
+        object-fit: cover;
+    }
+    
+    .text-wrapper {
+        flex-grow: 1;
+        word-break: break-word; /* Crucial for breaking long words */
+        overflow-wrap: break-word;/* Crucial for breaking long words */
+    }
+    
+    .text-wrapper p {
+      margin: 0;
+      line-height: 1.5; /* Optional: adjust line spacing */
+    }
+    </style>
+    </head>
+    <body>
+        
+        <div class="container">
+            <div class="image-wrapper">
+                <img src="/images/crowd.2111060927136.jpg" alt="Example Image">
+            </div>
+            <div class="text-wrapper">
+                <p>This is a very long line of text that should wrap below the image when it exceeds the available horizontal space. It will break words if it has to. This is a very long line of text that should wrap below the image when it exceeds the available horizontal space. It will break words if it has to. This is a very long line of text that should wrap below the image when it exceeds the available horizontal space. It will break words if it has to.</p>
+            </div>
+        </div>
+        
+    </body>
+    </html>

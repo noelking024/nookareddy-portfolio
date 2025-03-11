@@ -44,16 +44,17 @@ nav ul{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-}
-nav li{
     height: 80px;
 }
-nav a{
-    padding: 0 20px;
-    text-decoration: none;
+nav li{
+    height: 100%;
     display: flex;
-    height: fit-content;
     align-items: center;
+}
+nav a{
+    margin: 0 20px;
+    width: 80%;
+    text-decoration: none;
     color: black;
     transition: .3s ease;
 }
@@ -61,14 +62,15 @@ nav a img{
     width: 150px;
 }
 nav a:hover{
-    background-color: rgb(130, 198, 249);
-    border-bottom: 2px solid #000000;
+    /* background-color: rgb(130, 198, 249); */
+    border-bottom: 1px solid #000000;
 }
 nav li:first-child{
     margin-right: auto;
 }
-nav span{
-    background-color: rgb(130, 198, 249);
+nav li span{
+    /* width: 80%; */
+    border-bottom: 1px solid #000000;
 }
 .hide-pc{
     display: none;

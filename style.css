@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: "Quicksand", sans-serif;
 }
 body{
     min-height: 100vh;
@@ -137,7 +138,7 @@ nav span{
 }
 
 .footer-curl{
-    background-image: url('/images/cur1.png');
+    /* background-image: url('/images/cur1.png'); */
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #ffffff;
@@ -145,8 +146,10 @@ nav span{
 }
 .footer-info{
     /* background-color: #052aaf; */
-    background: linear-gradient(to bottom, #052aaf, #031722);
+    background: linear-gradient(to bottom, #ffffff ,#1395ff);
     display: grid;
+    padding-top: 90px;
+    padding-bottom: 50px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 .foot-data{
@@ -155,7 +158,7 @@ nav span{
 }
 .foot-data li a{
     text-decoration: none;
-    color: #ffffff;
+    color: #000000;
     font-weight: 500;
     transform: translateX(0px);
     transition: transform 0.2s ease;
@@ -169,12 +172,12 @@ nav span{
     list-style-type: none;
 }
 .foot-data h3{
-    color: #ffffff;
+    color: #000000;
     padding: 10px 0;
     /* word-spacing: 10px; */
 }
 .foot-data li a:hover{
-    color: #1ad26a;
+    color: #0e6ebd;
     /* transform: translateX(15px); */
 }
 .foot-data li:hover{
@@ -190,7 +193,13 @@ nav span{
     /* justify-content: center; */
 }
 .foot-data h2{
-    color: #35f912;
+    color: #0e7d79;
+}
+.foot-data h2 span{
+    font-family: "Bebas Neue", sans-serif;
+    /* font-family: "Big Shoulders", sans-serif; */
+    font-size: 30px;
+    color: #2372bc;
 }
 @media(max-width:617px){
     .social-icons{

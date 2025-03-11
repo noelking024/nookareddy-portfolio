@@ -1,8 +1,8 @@
 .intro-name{
     text-align: center;
     padding: 10px 0;
-    border: 2px solid rgb(75, 228, 255);
-    background-color: rgb(75, 228, 255);
+    /* border: 2px solid rgb(255, 255, 255); */
+    background-color: rgb(255, 255, 255);
 }
 .intro-name h1{
     animation-name: intro;
@@ -31,7 +31,8 @@
     padding: 20px;
     padding-bottom: 40px;
     justify-content: center;
-    background: linear-gradient(to bottom, rgb(75, 228, 255), rgb(251, 254, 255));
+    background-color: #ffffff;
+    /* background: linear-gradient(to bottom, rgb(75, 228, 255), rgb(251, 254, 255)); */
 }
 .intro-profileimage-contaier img{
     animation: intro 2.6s;
@@ -412,9 +413,9 @@ hr{
     font-size: 43px;
     font-weight: 500;
     padding-left: 10px;
-    color: #1623b3;
+    color: #748188;
     display: inline-block;
-    border-left: 4px solid #e20bc2;
+    border-left: 4px solid #030506;
 }
 .slidcontainer{
     display: flex;

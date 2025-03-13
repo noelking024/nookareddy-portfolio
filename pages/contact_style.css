@@ -7,7 +7,34 @@ section, .curve{
     background-image: url('/images/dbclr1.png');
     /* background-image: url('/images/cur1.png'); */
     background-size: 80%;
+    width: 70%;
     opacity: 0.2;
     background-repeat: no-repeat;
-    padding: 10% 0;
+    padding: 7% 0;
+}
+.description-contact{
+    margin: 30px;
+}
+.description-contact h1{
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: rgb(49, 58, 122);
+}
+.description-contact p{
+    font-size: 18px;
+    text-align: justify;
+    color: rgb(59, 59, 59);
+    line-height: 1.9;
+}
+@media(max-width:700px){
+    .description-contact h1{
+        font-size: 30px;
+    }
+    .description-contact p{
+        font-size: 16px;
+    }
+}
+.foot-data h3{
+    font-size: 18px;
+    font-weight: 600;
 }

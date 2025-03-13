@@ -177,11 +177,9 @@ nav li span{
 .foot-data h3{
     color: #000000;
     padding: 10px 0;
-    /* word-spacing: 10px; */
 }
 .foot-data li a:hover{
     color: #0e6ebd;
-    /* transform: translateX(15px); */
 }
 .foot-data li:hover{
     transform: translateX(10px);

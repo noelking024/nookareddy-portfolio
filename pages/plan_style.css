@@ -1,0 +1,52 @@
+
+.act-line{
+    background: linear-gradient(to bottom, #85c6ff, #ffffff);
+    text-align: center;
+    padding: 3%;
+}
+.statement{
+    margin: 0 5%;
+}
+.statement p{
+    font-size: 18px;
+    line-height: 1.6;
+    word-spacing: 2px;
+}
+@media(max-width: 450px){
+    .statement p{
+        font-size: 16px;
+    }
+    .act-line{
+        padding: 5%;
+        font-size: 16px;
+    }
+}
+.planlist{
+    margin: 3% 5%;
+}
+.planlist h2{
+    font-size: 24px;
+}
+.planelem{
+    margin: 2% 0;
+    padding: 2%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.planelem h2{
+    font-size: 20px;
+    color: #048bd3;
+    margin-bottom: 15px;
+}
+.planelem ul{
+    margin: 0 15px;
+}
+.planelem ul li{
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+.planelem ul li span{
+    font-weight: bold;
+    color: #04af7f;
+}

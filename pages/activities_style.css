@@ -1,7 +1,7 @@
 .activities-intro{
     text-align: center;
     margin: 7% 0;
-    color: rgb(48, 48, 48);
+    color: rgb(255, 255, 255);
     animation: act 1s;
 }
 @keyframes act{
@@ -17,7 +17,7 @@
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust minmax values as needed */
     grid-gap: 20px;
     margin-top: 10px;
-    margin-bottom: 55px;
+    /* margin-bottom: 55px; */
     margin-right: 10px;
     margin-left: 10px;
 }
@@ -27,8 +27,8 @@
     }
 }
 .act-images-container img{
-    width: 100%;
-    height: auto;
+    width: 290px;
+    height: 200px;
     /* padding: 20px; */
     border-radius: 10px;
     transition: transform 0.3s ease;
@@ -50,19 +50,10 @@
     transition: .2s ease;
 }
 body{
-    background-image: url('/images/blue_down.jpg');
+    background-image: url('/images/804.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-position: 0 -100px; */
-    /* background-position-y: 20%; */
+    background-position: 0 -150px;
+    /* background-position-y: 50%; */
     /* background: linear-gradient(to right, rgb(118, 214, 255), rgb(255, 255, 255)); */
-}
-.new-curve{
-    background-image: url('/images/dbclr1.png');
-    padding: 10% 0;
-    margin-bottom: 5%;
-    background-size: cover;
-    opacity: 0.3;
-    background-position: -150px 0;
-    background-repeat: no-repeat;
 }

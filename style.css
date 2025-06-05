@@ -24,7 +24,7 @@ body{
     text-decoration: none;
     color: aliceblue;
     margin: 0 10px;
-    padding: 0 3px;
+    padding: 10px 3px;
 }
 .social-elements a:hover{
     color: #055c15;
@@ -159,6 +159,9 @@ nav li span{
     color: #ffffff;
     margin: 20px 6%;
 }
+.foot-data h2{
+    margin-bottom: 15px;
+}
 .foot-data li a{
     text-decoration: none;
     color: #000000;
@@ -176,6 +179,9 @@ nav li span{
 }
 .foot-data h3{
     color: #000000;
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 600;
     padding: 10px 0;
 }
 .foot-data li a:hover{
@@ -183,6 +189,12 @@ nav li span{
 }
 .foot-data li:hover{
     transform: translateX(10px);
+}
+.foot-data span ul li a{
+    font-weight: 700;
+}
+.foot-data span ul li a span{
+    font-weight: 800;
 }
 .social-icons a{
     font-size: 23px;
@@ -194,12 +206,15 @@ nav li span{
     /* justify-content: center; */
 }
 .foot-data h2{
+    font-size: 20px;
+    font-weight: 600;
     color: #0e7d79;
 }
 .foot-data h2 span{
     font-family: "Bebas Neue", sans-serif;
     /* font-family: "Big Shoulders", sans-serif; */
     font-size: 30px;
+    font-weight: 600;
     color: #2372bc;
 }
 @media(max-width:617px){

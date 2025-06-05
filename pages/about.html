@@ -54,7 +54,7 @@
     </div>
 
     <div class="intro-profileimage-contaier">
-        <img src="/images/Reddy Sir.png" alt="">
+        <img src="/images/Nookamoon.png" alt="">
         <div class="profile-info">
             <table>
                 <tr>
@@ -97,7 +97,7 @@
 
     <div class="about-matter">
         <div class="blank-space"></div>
-        <img class="first-img" src="/images/fb_images/image11.png" alt="">
+        <img class="first-img" src="/images/fb_images/ab-img.png" alt="">
         <div class="ab-text">
             <h2 class="dream-line">Years of fullfilling Dreams</h2>
             <div>
@@ -131,11 +131,19 @@
     </div>
 
     <div class="backimg">
-        <img src="/images/fb_images/image3.png" alt="">
+        <!-- <img src="/images/fb_images/nimg2.png" alt=""> -->
     </div>
     <!-- <img class="backimg" src="/images/fb_images/image3.png" alt=""> -->
     <div class="slokam">
         <p>అసారే ఖలు సంసారే మృతః కోవా న జాయితీ | <br> యేన జాతేన బహవః జీవని స ఏవ జీవతి  || </p>
+    </div>
+
+    <div class="we-bg">
+        <div class="we-do">
+            <h1>Strategic Action Plan</h1>
+            <p>On being elected as MLC graduate Mr. Nooke Reddy Garu's plan of action for the development is sensational.</p>
+            <a href="plan.html">Know More</a>
+        </div>
     </div>
 
     <div class="transform-line">
@@ -166,6 +174,9 @@
                 </ul>
         </div>
     </div>
+    <div class="blank-air">
+
+    </div>
     
     <!-- Footer -->
     <div class="footer-curl">
@@ -195,11 +206,13 @@
         </div>
         <div class="foot-data">
             <h2>Social Links</h2>
+            <span>
             <ul class="social-icons">
-                <li><a href="https://www.facebook.com/nookareddy.kolli/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                <li><a href="https://www.facebook.com/nookareddy.kolli/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                <li><a href="https://www.facebook.com/nookareddy.kolli/" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.facebook.com/nookareddy.kolli/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i>&nbsp; &nbsp; Facebook</a></li>
+                <li><a href="https://www.facebook.com/nookareddy.kolli/" target="_blank"><span>X</span>&nbsp; &nbsp; Twitter</a></li>
+                <li><a href="https://www.facebook.com/nookareddy.kolli/" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i>&nbsp; &nbsp; Instagram</a></li>
             </ul>
+            </span>
         </div>
     </div>
 
@@ -282,6 +295,24 @@
         });
 
         observer11.observe(container11);
+    </script>
+    <script>
+        const container121 = document.querySelector('.we-do');
+
+        const observer121 = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+            container121.classList.add('animate');
+            // Optional: Disconnect the observer after the animation has played once
+            // observer1.disconnect();
+            } else {
+            // Optional: Reverse the animation when the container is out of view
+            // container11.classList.remove('animate');
+            }
+        });
+        });
+
+        observer121.observe(container121);
     </script>
     <script>
         const container1211 = document.querySelector('.card-item:nth-child(1)');

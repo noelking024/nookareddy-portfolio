@@ -50,3 +50,13 @@
     font-weight: bold;
     color: #04af7f;
 }
+
+@keyframes intro {
+    0% {
+        transform: translateY(120px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}

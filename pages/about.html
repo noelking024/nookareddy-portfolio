@@ -178,6 +178,14 @@
 
     </div>
     
+    <div class="sp-bg">
+        <div class="spandana-spot">
+            <h1>Spandana Compliant Form</h1>
+            <p>A strong support to all your problems from Mr. Nooka Reddy. Just let him know your problem in the compliant form and set your worries off the table. Mr. Nooka Reddy has got your back with solution to every problem.</p>
+            <a href="/pages/spandana.html">Spandana Compliant form</a>
+        </div>
+    </div>
+
     <!-- Footer -->
     <div class="footer-curl">
         <!-- <p> </p> -->
@@ -215,19 +223,6 @@
             </span>
         </div>
     </div>
-
-
-
-     <!-- <div class="footer-menu">
-        <ul>
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="activities.html">Activities</a></li>
-            <li><a href="media.html">PRs</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-     </div> -->
-
 
      <script>
         function showSidebar(){
@@ -313,6 +308,24 @@
         });
 
         observer121.observe(container121);
+    </script>
+    <script>
+        const container1121 = document.querySelector('.spandana-spot');
+
+        const observer1121 = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+            container1121.classList.add('animate');
+            // Optional: Disconnect the observer after the animation has played once
+            // observer1.disconnect();
+            } else {
+            // Optional: Reverse the animation when the container is out of view
+            // container11.classList.remove('animate');
+            }
+        });
+        });
+
+        observer1121.observe(container1121);
     </script>
     <script>
         const container1211 = document.querySelector('.card-item:nth-child(1)');

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nooka Reddy</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="spandana_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"/>
+    <link rel="shortcut icon" href="/images/fav.png" type="image/x-icon">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"> -->
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="greenline">
+        <div class="social-elements">
+            <a href="https://www.facebook.com/nookareddy.kolli/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/nookareddy.kolli/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/nookareddy.kolli/" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+        </div>
+    </div>
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><i class="fa fa-close"style="font-size:32px"></i></a></li>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/pages/about.html">About</a></li>
+            <li><a href="/pages/activities.html">Activities</a></li>
+            <li><a href="/pages/media.html">PRs</a></li>
+            <li><a href="/pages/contact.html">Contact</a></li>
+            <li><a href="/pages/register.html">Register</a></li>
+        </ul>
+        <ul>
+            <li><a href="/index.html"><img src="/images/logo.png" alt=""></a></li>
+            <li class="hide-mobile"><a href="/index.html">Home</a></li>
+            <li class="hide-mobile"><a href="/pages/about.html">About</a></li>
+            <li class="hide-mobile"><a href="/pages/activities.html">Activities</a></li>
+            <li class="hide-mobile"><a href="/pages/media.html">PRs</a></li>
+            <li class="hide-mobile"><a href="/pages/contact.html">Contact</a></li>
+            <li class="hide-mobile"><a href="/pages/register.html">Register</a></li>
+            <li class="hide-pc" onclick=showSidebar()><a href="#"><i class="fa fa-bars"style="font-size:30px"></i></a></li>
+        </ul>
+    </nav>
+
+    <!-- Body -->
+     <!-- Google sheet -->
+    <!-- https://docs.google.com/spreadsheets/d/1eO4K4zALg61OY5fKQHoHsi_sEY7_31PBUuG1n4v11ss/edit?gid=0#gid=0 -->
+
+    <!-- Name, email, District, Refer to, District -->
+
+
+
+    <div class="comp-title">
+      <h1>Spandana Compliant Form</h1>
+      <p>Mr. Nooka Reddy came up with a step to fight for the better nation. As a part of it, with this spandana compliant form Nooka Reddy is going to take all your problems to the right persons, and fight till he gets the solution. Fill out your compliant, sit back and relax. Mr. Nooka Reddy's got your back!</p>
+    </div>
+    <form id="form" class="container m-4 pl-4" method="POST">
+      <div class="field">
+        <label class="label">Full Name <span style="color: red;">*</span></label>
+        <div class="control">
+          <input
+            class="input"
+            type="text"
+            placeholder="Your Full Name"
+            name="Full Name"
+            required="required"
+          />
+        </div>
+      </div>
+
+
+      <div class="field">
+        <label class="label">Email <span style="color: red;">*</span></label>
+        <div class="control">
+          <input
+            class="input"
+            type="email"
+            placeholder="Your Email"
+            name="Email"
+            required="required"
+          />
+        </div>
+      </div>
+      
+      <div class="field">
+          <label class="label">Phone Number <span style="color: red;">*</span></label>
+          <div class="control">
+              <input
+              class="input"
+              type="number"
+              placeholder="Enter Phone No"
+              name="Phone Number"
+              required="required"
+              />
+            </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Select District <span style="color: red;">*</span></label>
+        <select name="District" id="district" required="required" class="input">
+            <option value="">--Select District--</option>
+            <option value="Vizianagaram">Vizianagaram</option>
+            <option value="Visakhapatnam">Visakhapatnam</option>
+            <option value="Srikakulam">Srikakulam</option>
+            <option value="Vijayawada">Vijayawada</option>
+        </select>
+      </div>
+      
+      <div class="field">
+        <label class="label">Compliant Addressing To <span style="color: red;">*</span></label>
+        <select name="Addressing" id="addressing" required="required" class="input">
+            <option value="">--Select The Official--</option>
+            <option value="Collector">Collector</option>
+            <option value="Superintendent of Police">Superintendent of Police</option>
+            <option value="Commisioner of Police">Commisioner of Police</option>
+            <option value="MLA">MLA</option>
+            <option value="Sarpanch">Sarpanch</option>
+            <option value="Sarpanch">MRO</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label class="label">Compliant <span style="color: rgb(255, 0, 0);">*</span></label>
+        <div class="control">
+          <textarea
+            class="textarea"
+            placeholder="Enter your Compliant"
+            name="Compliant"
+            required="required"
+          ></textarea>
+        </div>
+      </div>
+
+
+      <div class="field is-grouped">
+        <div class="control">
+          <button class="button is-primary" type="submit" id="submit-button">
+            Submit Response
+          </button>
+        </div>
+        <div class="control">
+          <button class="button is-danger" id="cancelButton" type="button">Clear Response</button>
+        </div>
+      </div>
+    </form>
+    <div
+      id="message"
+      style="
+        display: none;
+        margin: 20px;
+        font-weight: bold;
+        color: green;
+        padding: 8px;
+        background-color: beige;
+        border-radius: 4px;
+        border-color: aquamarine;
+      "
+    ></div>
+    
+    <!-- Footer -->
+    <div class="footer-curl">
+        <!-- <p> </p> -->
+    </div>
+
+    <div class="footer-info">
+        <div class="foot-data">
+            <h2><span>Kolli Nooka Reddy</span></h2>
+            <h3>+91 8019219266, knreddy.aditya@gmail.com Visakhapatnam,<br>Andhra Pradesh</h3>
+        </div>
+        <div class="foot-data">
+            <h2>About</h2>
+            <ul>
+                <li><a href="/index.html"><i class="fa fa-arrow-right" aria-hidden="true"></i> Home</a></li>
+                <li><a href="/pages/about.html"><i class="fa fa-arrow-right" aria-hidden="true"></i> About</a></li>
+                <li><a href="/pages/contact.html"><i class="fa fa-arrow-right" aria-hidden="true"></i> Contact</a></li>
+            </ul>
+        </div>
+        <div class="foot-data">
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="/pages/activities.html"><i class="fa fa-arrow-right" aria-hidden="true"></i> Activities</a></li>
+                <li><a href="/pages/media.html"><i class="fa fa-arrow-right" aria-hidden="true"></i> PRs</a></li>
+                <li><a href="/pages/register.html"><i class="fa fa-arrow-right" aria-hidden="true"></i> Register</a></li>
+            </ul>
+        </div>
+        <div class="foot-data">
+            <h2>Social Links</h2>
+            <span>
+            <ul class="social-icons">
+                <li><a href="https://www.facebook.com/nookareddy.kolli/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i>&nbsp; &nbsp; Facebook</a></li>
+                <li><a href="https://www.facebook.com/nookareddy.kolli/" target="_blank"><span>X</span>&nbsp; &nbsp; Twitter</a></li>
+                <li><a href="https://www.facebook.com/nookareddy.kolli/" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i>&nbsp; &nbsp; Instagram</a></li>
+            </ul>
+            </span>
+        </div>
+    </div>
+
+     <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+
+    <script>
+      document.getElementById("form").addEventListener("submit", function (e) {
+        e.preventDefault(); // Prevent the default form submission
+        document.getElementById("message").textContent = "Submitting..";
+        document.getElementById("message").style.display = "block";
+        document.getElementById("submit-button").disabled = true;
+
+        // Collect the form data
+        var formData = new FormData(this);
+        var keyValuePairs = [];
+        for (var pair of formData.entries()) {
+          keyValuePairs.push(pair[0] + "=" + pair[1]);
+        }
+
+        var formDataString = keyValuePairs.join("&");
+
+        // Send a POST request to your Google Apps Script
+        fetch(
+          "https://script.google.com/macros/s/AKfycbxm6-nJC8luf-PoEkbbKvP_svT2UTr9cGpCRn9jjAXGkJb5DkZGimLUP9o7AedWoXSRlA/exec",
+          {
+            redirect: "follow",
+            method: "POST",
+            body: formDataString,
+            headers: {
+              "Content-Type": "text/plain;charset=utf-8",
+            },
+          }
+        )
+          .then(function (response) {
+            // Check if the request was successful
+            if (response) {
+              return response; // Assuming your script returns JSON response
+            } else {
+              throw new Error("Failed to submit the form.");
+            }
+          })
+          .then(function (data) {
+            // Display a success message
+            document.getElementById("message").textContent =
+              "Data submitted successfully!";
+            document.getElementById("message").style.display = "block";
+            document.getElementById("message").style.backgroundColor = "green";
+            document.getElementById("message").style.color = "beige";
+            document.getElementById("submit-button").disabled = false;
+            document.getElementById("form").reset();
+
+            setTimeout(function () {
+              document.getElementById("message").textContent = "";
+              document.getElementById("message").style.display = "none";
+            }, 2600);
+          })
+          .catch(function (error) {
+            // Handle errors, you can display an error message here
+            console.error(error);
+            document.getElementById("message").textContent =
+              "An error occurred while submitting the form.";
+            document.getElementById("message").style.display = "block";
+          });
+      });
+    </script>
+
+    <script>
+      // Get references to the form and the cancel button
+      const form = document.getElementById('form');
+      const cancelButton = document.getElementById('cancelButton');
+
+      // Add an event listener to the cancel button
+      if (cancelButton && form) {
+          cancelButton.addEventListener('click', function() {
+              form.reset(); // This clears all fields in the form
+              console.log('Form cleared!'); // Optional: for debugging
+          });
+      } else {
+          console.error("Form or Cancel button not found. Please ensure IDs are correct.");
+      }
+    </script>
+
+</body>
+</html>

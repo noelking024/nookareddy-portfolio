@@ -636,3 +636,49 @@ hr{
 .we-bg{
     background-color: #ffffff;
 }
+
+/* spandana */
+
+.spandana-spot {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 3%;
+}
+.spandana-spot h1 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #014eb3;
+    padding-bottom: 20px;
+}
+.spandana-spot p {
+    font-size: 18px;
+    color: #242424;
+    padding: 10px;
+    padding-bottom: 40px;
+}
+.spandana-spot a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+    border: 2px solid #0876dc;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+.spandana-spot a:hover {
+    background-color: #0876dc;
+    color: #ffffff;
+    transition: 0.3s ease-in-out;
+}
+.spandana-spot {
+    opacity: 0; /* Initially hidden */
+    transform: translateX(-150px); /* Move down */
+    transition: opacity 2s ease, transform 3s ease; /* Smooth transition */
+}
+.spandana-spot.animate {
+    opacity: 1;
+    transform: translateX(0px);
+}
+.sp-bg{
+    background-color: #ffffff;
+}

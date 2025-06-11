@@ -13,6 +13,14 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="/images/fav.png" type="image/x-icon">
+    <style>
+        .lang-en, .lang-te {
+        display: none;
+        }
+        .visible {
+        display: block;
+        }
+    </style>
 </head>
 <body>
 
@@ -110,6 +118,13 @@
         
         </div>
     </div>
+
+    <div style="text-align:center; margin: 50px 0;">
+        <button onclick="toggleLanguage()" id="langToggleBtn" style="padding: 10px 20px; font-size: 18px; cursor: pointer;">
+            తెలుగు చూడండి
+        </button>
+    </div>
+
     
     
     <!-- Footer -->
@@ -192,5 +207,74 @@
         }
         });
     </script>
+
+    <script>
+    const translations = {
+        en: {
+            title: "Strategic Action Plan",
+            statement: `Mr. Nooka Reddy's plan of action for the brighter future in inevitable. 
+            His vision is to uplift the society and the nation with his strategic action plan.
+            The plan includes various aspects such as rural development, education, health, and more.`,
+            toggleBtn: "తెలుగు చూడండి",
+        },
+        te: {
+            title: "ยุధ్ధ కార్యాచరణ ప్రణాళిక",
+            statement: `శ్రీ నూకా రెడ్డి యొక్క కార్యాచరణ ప్రణాళిక उज్వల భవిష్యత్తుకు మార్గదర్శకంగా నిలుస్తుంది.
+            ఆయన దృష్టి సమాజాన్ని మరియు దేశాన్ని అభివృద్ధి చేయడం.
+            ఈ ప్రణాళికలో గ్రామీణాభివృద్ధి, విద్య, ఆరోగ్యం వంటి అంశాలు ఉన్నాయి.`,
+            toggleBtn: "View in English",
+        }
+    };
+
+    const liTranslations = {
+        "Advocacy for Infrastructure:": {
+            te: "గవర్నమెంట్ మద్దతుతో భవనాల నిర్మాణం:",
+            desc_en: "Push for state funding for new school buildings, classrooms, libraries, laboratories, and sanitation facilities in underserved areas.",
+            desc_te: "పల్లెటూర్లలో పాఠశాలలు, లైబ్రరీలు, శౌచాలయాల కోసం నిధులు సమకూర్చడం."
+        },
+        "Quality of Education:": {
+            te: "విద్యా నాణ్యత:",
+            desc_en: "Advocate for improved teacher training programs, recruitment of qualified educators, and provision of modern teaching aids and technology (e.g., smart classrooms, computer labs).",
+            desc_te: "ఉపాధ్యాయ శిక్షణ, స్మార్ట్ తరగతులు, ల్యాబ్‌లు లాంటి ఆధునిక వనరులు కల్పించడం."
+        },
+        "Scholarships and Financial Aid:": {
+            te: "విద్యా పథకాలు మరియు ఆర్థిక సహాయం:",
+            desc_en: "Promote awareness and facilitate access to state-sponsored scholarships, stipends, and financial aid schemes for students from economically weaker sections.",
+            desc_te: "పేద విద్యార్థులకు స్కాలర్‌షిప్‌లు, ఆర్థిక సహాయం పొందేలా చేయడం."
+        },
+        // ...continue all the others similarly
+    };
+
+    let currentLang = "en";
+
+    function toggleLanguage() {
+        currentLang = currentLang === "en" ? "te" : "en";
+
+        // Header text
+        document.querySelector('.act-line h1').textContent = translations[currentLang].title;
+        document.querySelector('.statement p').textContent = translations[currentLang].statement;
+        document.getElementById("langToggleBtn").textContent = translations[currentLang].toggleBtn;
+
+        // Translate each li
+        document.querySelectorAll('.planelem ul li').forEach(li => {
+            const span = li.querySelector('span');
+            if (!span) return;
+
+            const original = span.textContent.trim();
+            const record = liTranslations[original] || Object.entries(liTranslations).find(([key, val]) => val.te === original)?.[1];
+
+            if (!record) return;
+
+            if (currentLang === "te") {
+                span.textContent = record.te;
+                li.childNodes[1].textContent = " " + record.desc_te;
+            } else {
+                span.textContent = Object.keys(liTranslations).find(key => liTranslations[key] === record);
+                li.childNodes[1].textContent = " " + record.desc_en;
+            }
+        });
+    }
+    </script>
+
 </body>
 </html>

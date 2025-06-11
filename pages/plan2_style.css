@@ -1,0 +1,68 @@
+.act-line-en{
+    padding: 40px 0;
+    text-align: center;
+    font-size: 18px;
+    word-spacing: 2px;
+    background: linear-gradient(to bottom, #88c7ff, #ffffff);
+}
+.act-line-te{
+    padding: 40px 0;
+    text-align: center;
+    font-size: 18px;
+    word-spacing: 2px;
+    background: linear-gradient(to bottom, #88c7ff, #ffffff);
+}
+.act-line-te h1{
+    font-family: "Mandali", sans-serif;
+    /* font-size: 300; */
+}
+/* english */
+.lang-en{
+    padding: 0 7%;
+}
+.lang-en ol li{
+    color: #00ae71;
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+.lang-en ol li ul{
+    margin: 20px 0;;
+    margin-left: 20px;
+}
+.lang-en ol li ul li{
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+/* telugu */
+.lang-te{
+    padding: 0 7%;
+}
+.lang-te ol li{
+    font-family: "Timmana", sans-serif;
+    color: #00ae71;
+    margin: 10px 0;
+    font-size: 22px;
+}
+.lang-te ol li ul{
+    margin: 20px 0;;
+    margin-left: 20px;
+}
+.lang-te ol li ul li{
+    color: black;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.4;
+}
+/* switch */
+.act-line-en, .act-line-te {
+    display: none;
+}
+.lang-en, .lang-te {
+    display: none;
+}
+.visible {
+    display: block;
+}
